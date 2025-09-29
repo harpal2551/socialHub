@@ -1,0 +1,19 @@
+.halfProfileContainer{
+  border: 2px solid red;
+  min-height: 100vh;
+  padding: 1vh 0vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: right;
+
+}
+.halfProfile{
+  border: 2px solid blue;
+  width: fit-content;
+  height: fit-content;
+  padding: 2vh 3vh;
+}
+.rightProfileImg img{
+  width: 15vh;
+  border-radius: 10vh;
+}

@@ -1,0 +1,77 @@
+.loginPage{
+    /* border: 2px solid red; */
+    background-color: rgba(230, 240, 249);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginDiv{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 3vh;
+    padding: 8vh 20vh;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+.loginHeading{
+    /* border: 2px solid black; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1vh 5vh;
+}
+.loginHeading h2{
+    margin-bottom: 1vh;
+}
+.loginDiv form{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.loginDiv form .loginInputBox{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    padding: 4vh 2vh 1vh 2vh;
+}
+form .loginInputBox .loginBox{
+    width: 40vh;
+    padding: 2vh 2vh;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    border: 1px solid black;
+}
+form .buttonLogin button{
+    font-size: 4vh;
+    padding: 2vh 17vh;
+    background-color: rgba(27, 54, 93);
+    border: transparent;
+    color: white;
+    border-radius: 2vh;
+}
+.loginDiv .forgotCreate{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.loginDiv .forgotCreate .forgotAccount{
+    margin-bottom: 2vh;
+}
+.loginDiv .forgotCreate .forgotAccount h3{
+    color: rgb(9, 68, 119);
+    /* padding-bottom: 2vh; */
+    font-size: 2vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.loginDiv .forgotCreate .signAccount h3{
+    font-size: 3vh;
+    color: black;
+}
+.forgotCreate a{
+    text-decoration: none;
+}

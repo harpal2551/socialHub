@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.navBarDash {
+  /* box-shadow: -3px -13px 20px -4px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: -3px -13px 20px -4px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: -3px -13px 20px -4px rgba(0,0,0,0.75) inset; */
+  /* border: 2px solid red; */
+
+  border-bottom: 1px solid black;
+  background: #7fc7eb;
+  background: linear-gradient(
+    35deg,
+    rgba(127, 199, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 92%
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 4vh;
+}
+.navBarDash .leftNav {
+  width: fit-content;
+  /* border: 2px solid blue; */
+}
+.navBarDash .leftNav img {
+  width: 10vh;
+  /* border: 2px solid red; */
+}
+/* .centerNav{
+  border: 2px solid green;
+  padding: 1vh;
+} */
+.centerNav input {
+  font-size: 3vh;
+  width: 30rem;
+  padding: 2vh 2vh 2vh 4vh;
+  /* padding-left: 2vh; */
+  background-color: white;
+  /* background-color: rgb(219, 221, 222); */
+  border-radius: 4vh;
+  /* border-radius: 2vh 0vh 0vh 2vh; */
+  border: 1px solid black;
+  outline: none;
+}
+.rightProfile {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 2vh;
+  padding: 1vh;
+  font-size: 5vh;
+}
+.rightProfile .profile {
+  color: black;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  flex-direction: column;
+}
+.rightProfile .profile span {
+  /* border: 2px solid black; */
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  max-width: fit-content;
+  white-space: nowrap;
+  width: 22vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rightProfile .profileNavImg{
+  /* border: 2px solid blue; */
+  width: 6.4vh;
+  min-height: 6vh;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+}
+.rightProfile .profileNavImg img{
+  /* border: 3px solid gold; */
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 5vh;
+}
+.rightProfile .profileSetting {
+  color: rgb(116, 108, 108);
+}
+.logout button{
+  padding: 1vh;
+  color: black;
+  border-radius: 3vh;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 3vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

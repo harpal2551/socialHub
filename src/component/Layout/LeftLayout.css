@@ -1,0 +1,68 @@
+.leftSideLayer {
+  background-color: rgba(219, 221, 222, 0.406);
+  /* background-color: rgba(0, 0, 255, 0.475); */
+  max-height: fit-content;
+  min-height: 84.4vh;
+  display: flex;
+  justify-content: space-between;
+}
+/* .leftLayer, .centerLayout, .rightLayout{
+    border: 2px solid green;
+} */
+.leftLayer:hover {
+  background-color: rgba(230, 231, 232, 0.514);
+}
+.leftLayer {
+  transition: 0.2s ease-in-out;
+  position: relative;
+  top: 8vh;
+  height: 72.3vh;
+  /* border: 2px solid blue; */
+  border-radius: 0vh 3vh 3vh 0vh;
+  background-color: rgb(236, 237, 238);
+  /* background-color: rgb(219, 221, 222); */
+  /* border: 1px solid black; */
+
+  box-shadow: 1px 2px 5px 6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 5px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 5px 6px rgba(0, 0, 0, 0.75);
+
+  width: fit-content;
+  padding: 2vh 3vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  gap: 6vh;
+}
+.homeMenuLeft,
+.CreateMenuLeft,
+.messageMenuLeft,
+.notiMenuLeft,
+.profileMenuLeft,
+.settingMenuLeft {
+  color: black;
+  transition: 0.2s ease-in-out;
+  border-radius: 2vh;
+  /* border: 2px solid black; */
+  padding: 1vh 1vh;
+}
+/* .homeMenuLeft:hover .homeMenuIcon{
+    color: rgb(255, 0, 0);
+}
+.CreateMenuLeft:hover .createMenuIcon{
+    color: rgb(0, 94, 255);
+}
+.messageMenuLeft:hover .messageMenuIcon{
+    color: rgb(223, 213, 24);
+} */
+
+.homeMenuLeft:hover,
+.CreateMenuLeft:hover,
+.messageMenuLeft:hover,
+.notiMenuLeft:hover,
+.profileMenuLeft:hover,
+.settingMenuLeft:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
