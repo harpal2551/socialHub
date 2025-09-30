@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .navBarDash {
   /* box-shadow: -3px -13px 20px -4px rgba(0,0,0,0.75) inset;
 -webkit-box-shadow: -3px -13px 20px -4px rgba(0,0,0,0.75) inset;
@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding: 2vh 4vh;
 }
 .navBarDash .leftNav {
@@ -26,13 +27,19 @@
   width: 10vh;
   /* border: 2px solid red; */
 }
-/* .centerNav{
-  border: 2px solid green;
+.centerNav {
+  /* border: 2px solid green; */
   padding: 1vh;
-} */
+  /* width: auto; */
+  /* max-width: 20vh; */
+  min-width: 70vh;
+  position: relative;
+  margin-left: 20vh;
+  /* left: 10vh; */
+}
 .centerNav input {
   font-size: 3vh;
-  width: 30rem;
+  width: 100%;
   padding: 2vh 2vh 2vh 4vh;
   /* padding-left: 2vh; */
   background-color: white;
@@ -69,7 +76,7 @@
   text-overflow: ellipsis;
 }
 
-.rightProfile .profileNavImg{
+.rightProfile .profileNavImg {
   /* border: 2px solid blue; */
   width: 6.4vh;
   min-height: 6vh;
@@ -77,7 +84,7 @@
   display: flex;
   align-items: center;
 }
-.rightProfile .profileNavImg img{
+.rightProfile .profileNavImg img {
   /* border: 3px solid gold; */
   width: 100%;
   object-fit: cover;
@@ -87,15 +94,427 @@
 .rightProfile .profileSetting {
   color: rgb(116, 108, 108);
 }
-.logout button{
+.logout button {
   padding: 1vh;
   color: black;
   border-radius: 3vh;
   background-color: white;
   border: 2px solid black;
   font-size: 3vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
+}
+@media (min-width: 693px) and (max-width: 805px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 70vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+}
+@media (min-width: 673px) and (max-width: 692px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 60vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.5vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 628px) and (max-width: 672px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 60vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.5vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 568px) and (max-width: 628px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 50vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 528px) and (max-width: 568px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 30vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 0px) and (max-width: 528px) {
+  .leftNav {
+    display: none;
+  }
+  .navBarDash {
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 528px) and (max-width: 568px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 30vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 500px) and (max-width: 528px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 2vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+  .rightNav {
+    display: none;
+  }
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 498px) and (max-width: 500px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 2vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+  .rightNav {
+    display: none;
+  }
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 350px) and (max-width: 498px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    /* width: auto; */
+    /* max-width: 20vh; */
+    min-width: 2vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+  .rightNav {
+    display: none;
+  }
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 300px) and (max-width: 350px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    width: 2vh;
+    /* max-width: 10vh; */
+    min-width: 35vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+  .rightNav {
+    display: none;
+  }
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (min-width: 200px) and (max-width: 300px) {
+  .centerNav {
+    /* border: 2px solid green; */
+    padding: 1vh;
+    width: 2vh;
+    /* max-width: 10vh; */
+    min-width: 35vh;
+    position: relative;
+    margin-left: 0vh;
+    /* left: 10vh; */
+  }
+  .centerNav input {
+    font-size: 3vh;
+    width: 100%;
+    padding: 2vh 2vh 2vh 4vh;
+    /* padding-left: 2vh; */
+    background-color: white;
+    /* background-color: rgb(219, 221, 222); */
+    border-radius: 4vh;
+    /* border-radius: 2vh 0vh 0vh 2vh; */
+    border: 1px solid black;
+    outline: none;
+  }
+  .rightNav {
+    display: none;
+  }
+  .logout button {
+    padding: 1vh;
+    color: black;
+    border-radius: 3vh;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2.3vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 }

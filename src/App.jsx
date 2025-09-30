@@ -1,5 +1,5 @@
 // src/App.jsx
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {
   BrowserRouter,
   Routes,
@@ -17,8 +17,23 @@ import HomePageLayer from "./component/Layout/HomePageLayer.jsx";
 import RightPageLayer from "./component/Layout/RightPageLayer.jsx";
 import CreatePost from "./component/Layout/CreatePost.jsx";
 import HalfProfile from "./component/frontend/HalfProfile.jsx";
+import WorkOnlyDesktop from "./component/Layout/WorkOnlyDesktop.jsx";
 
 function App() {
+  useEffect(() => {
+    document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+    document.addEventListener("keydown", (e) => {
+      if (
+        e.keyCode === 123 || // F12
+        (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) || // Ctrl+Shift+I/J/C
+        (e.ctrlKey && e.key === "u") // Ctrl+U
+      ) {
+        e.preventDefault();
+      }
+    });
+  }, []);
+
   const route = createBrowserRouter([
     {
       path: "/layout",
@@ -50,19 +65,22 @@ function App() {
       ],
     },
   ]);
-  
+
   return (
     <>
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/layout" element={<LeftLayout />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
+    <WorkOnlyDesktop />
+
     <Toaster />
     <RouterProvider router={route}></RouterProvider>
+
     </>
   );
 }

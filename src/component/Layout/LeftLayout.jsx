@@ -1,36 +1,47 @@
 import React, { useState } from "react";
 import "./LeftLayout.css";
-import { Outlet } from "react-router-dom";
 import HomePage from "../frontend/HomePage.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faGears,
-  faIcons,
   faHouse,
   faPlus,
   faComments,
+  faIcons,
   faUserTie,
   faSliders,
+  faBars,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import RightPageLayer from "./RightPageLayer.jsx";
 import HomePageLayer from "./HomePageLayer.jsx";
 import CreatePost from "./CreatePost.jsx";
+import WorkOnlyDesktop from "./WorkOnlyDesktop.jsx";
 
 function LeftLayout() {
   const [showCreatePost, setShowCreatePost] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <HomePage />
+      {/* <HomePage /> */}
+
       <div className="leftSideLayer">
-        <div className="leftLayer">
+        {/* Left Sidebar */}
+        <div className={`leftLayer ${menuOpen ? "active" : ""}`}>
+          <div className="closeMenuIcon">
+            <FontAwesomeIcon
+              icon={faXmark}
+              onClick={() => setMenuOpen(false)}
+              className="closeMenuBtn"
+            />
+          </div>
+
           <div className="homeMenuLeft">
             <h2>
               <FontAwesomeIcon icon={faHouse} className="homeMenuIcon" /> Home
             </h2>
           </div>
 
-          {/* Create Button */}
           <div
             className="CreateMenuLeft"
             onClick={() => setShowCreatePost(true)}
@@ -64,17 +75,29 @@ function LeftLayout() {
           </div>
         </div>
 
+        {/* Menu Icon (Only Mobile & only when menu closed) */}
+        {!menuOpen && (
+          <div className="mobileMenuIcon" onClick={() => setMenuOpen(true)}>
+            <FontAwesomeIcon icon={faBars} />
+          </div>
+        )}
+
+        {/* Center & Right remain same */}
         <div className="centerLayout">
           <HomePageLayer />
         </div>
-
         <div className="rightLayout">
           <RightPageLayer />
         </div>
       </div>
 
       {/* Show Create Post Modal */}
-      {showCreatePost && <CreatePost closeModal={() => setShowCreatePost(false)} />}
+      {showCreatePost && (
+        <CreatePost closeModal={() => setShowCreatePost(false)} />
+      )}
+
+      {/* <WorkOnlyDesktop /> */}
+
     </>
   );
 }
